@@ -1,0 +1,33 @@
+Rodar API = uvicorn main:app
+
+Separar models em varias classes (talvez)
+Separar crud em varios services
+Colocar schemas no modelo de DTO
+Adicionar a data de entrega dentro do schema entregas
+
+Retirar o id dos schemas em locais como:
+
+[{'id': 1,
+  'cliente_id': 1, # RETIRAR POIS JA APARECE NO CLIENTE
+  'cliente': {'id': 1,
+   'nome': 'Ana Souza',
+   'numero': '11999999999',
+   'ativo': True},
+  'estado': 'Pendente',
+  'data_entrada': '2026-09-12T19:32:53.250666',
+  'data_entrega': None,
+  'entrega': {'endereco': 'Rua das Flores, 100', 'valor': '5.00'},
+  'itens': [{'id': 1, # MANTER PELA IDENTIFICAÇÃO DO ITEM
+    'produto_id': 1, # RETIRAR POIS JÁ CONTEM O ID DO produto
+    'quantidade': 2,
+    'valor_unitario': '50.00',
+    'produto': {'id': 1,
+     'nome': 'Chocolate artesanal',
+     'descricao': 'Caixa com 12 unidades',
+     'valor': '50.00',
+     'ativo': True}}],
+  'valor_total': '105.00'}]
+
+  Endpoint para ativar e desativar produtos e clientes 
+  Endpoint para cancelar pedidos
+  Endpoint alterar o estado do pedido 
