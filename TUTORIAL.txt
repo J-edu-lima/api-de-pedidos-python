@@ -1,0 +1,25 @@
+TUTORIAL - PAINEL DE PEDIDOS
+
+1. Abra um terminal na pasta do projeto:
+
+   cd /workspaces/api-de-pedidos-python
+
+2. Instale as dependências:
+
+   pip install flet
+
+3. Execute a aplicação no navegador:
+
+   flet run --web --host 127.0.0.1 --port 8550 src/main.py
+
+4. Abra este endereço no navegador:
+
+   http://127.0.0.1:8550
+
+5. Para parar a aplicação, volte ao terminal e pressione:
+
+   Ctrl + C
+
+Observação:
+O modo desktop pode exigir bibliotecas gráficas do sistema. Por isso,
+o modo web é a forma mais simples de executar o projeto.
