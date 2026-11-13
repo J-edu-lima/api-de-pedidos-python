@@ -3,7 +3,7 @@ projeto.txt
 *.ipynb
 requirements.txt
 
-
+.docs
 .gitignore
 __pycache__/
 *.py[cod]
